@@ -1,6 +1,6 @@
 function Page() {
   return (
-    <div>Mercant app soon</div>
+    <div>Mercant app coming soon </div>
   )
 }
 

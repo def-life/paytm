@@ -38,4 +38,4 @@ jobs:
             sudo docker pull deflife/paytm:latest
             sudo docker stop paytm || true
             sudo docker rm paytm || true
-            sudo docker run -e DATABASE_URL=${{secrets.DATABASE_URL}} -e NEXTAUTH_SECRET=${{secrets.NEXTAUTH_SECRET}} -d --name paytm -p 3005:3000 deflife/paytm:latest
+            sudo docker run -e DATABASE_URL=${{secrets.DATABASE_URL}} -e NEXTAUTH_SECRET=${{secrets.NEXTAUTH_SECRET}} -e NEXTAUTH_URL=${{secrets.NEXTAUTH_URL}} -d --name paytm -p 3005:3000 deflife/paytm:latest
